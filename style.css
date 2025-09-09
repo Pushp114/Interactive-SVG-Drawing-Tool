@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.board {
+  border: 2px solid #222;
+  padding: 16px;
+  background: #fff;
+  width: 650px;
+}
+
+.board h2 {
+  margin: 0 0 10px;
+}
+
+.controls {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls label {
+  font-size: 14px;
+}
+
+input[type="color"] {
+  margin-left: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid #111;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f2f2f2;
+}
+
+#canvas {
+  display: block;
+  border: 2px solid #999;
+  background: #f3f3f3;
+  user-select: none;
+  touch-action: none;
+  margin-top: 10px;
+}
+
+/* Drawn paths */
+#canvas path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
